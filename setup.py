@@ -8,6 +8,5 @@ setup(
     long_description=open("README.md", "r").read(),
     long_description_content_type='text/markdown',
     author='fxcilities',
-    packages=find_packages(),
-    install_requires=['aiohttp'],                    
+    packages=find_packages()                    
 )
