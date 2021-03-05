@@ -1,11 +1,11 @@
 import os, subprocess
-
+from random import choice
 from errors import PornHubRequestError
 
 
 class Shuana:
     def __init__(self):
-        self.watching_porn = True
+        """ Horny person """
         self.horny = (
             "https://kekers.dev/z4LfpuiA.png",
             "https://kekers.dev/WByc28oF.png",
@@ -16,12 +16,30 @@ class Shuana:
             "https://kekers.dev/zLu2Mpen.png",
             "https://kekers.dev/CI6iXTg8.png"
         )
-
-    def film_worldbot_porn(self):
+    
+    def proof_of_being_horny(self) -> str:
+        """ Sends a proof of shuana being horny. """
+        return choice(self.horny)
+    
+    def __repr__(self) -> str:
+        return "<Shuana is_horny=True watching_porn=True>"
+        
+    @property
+    def is_horny(self) -> bool:
+        """ Checks if the current state is horny or not. """
+        return True
+    
+    @property
+    def watching_porn(self) -> bool:
+        """ Checks if the current state is watching porn or not. """
+        return True
+        
+    def film_worldbot_porn(self) -> None:
+        """ Films world bot porn. """
         raise PornHubRequestError("At film limit")
 
-    def download_world(self, directory = "world"):
-        path = os.path.join(os.getcwd(), directory)
-        
-        subprocess.run(f'git clone https://github.com/shuanaongithub/World {path}', shell=True)
+    def download_world(self, directory: str = None) -> None:
+        """ Downloads World from the official world bot repository. """
+        path = os.path.join(os.getcwd(), directory or "world")
+        subprocess.run(f'git clone https://github.com/shuanaongithub/World {}', shell=True)
         print(f'Done! {path}')
