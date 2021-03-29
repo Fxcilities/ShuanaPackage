@@ -36,10 +36,10 @@ class Shuana:
         
     def film_worldbot_porn(self) -> None:
         """ Films world bot porn. """
-        raise PornHubRequestError("At film limit")
+        raise PornHubRequestError("At film limit") # smh
 
     def download_world(self, directory: str = None) -> None:
         """ Downloads World from the official world bot repository. """
         path = os.path.join(os.getcwd(), directory or "world")
-        subprocess.run(f'git clone https://github.com/shuanaongithub/World {}', shell=True)
+        subprocess.run(f'git clone https://github.com/shuanaongithub/World {path}', shell=True)
         print(f'Done! {path}')
