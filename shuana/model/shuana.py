@@ -1,6 +1,6 @@
 import os, subprocess
 from random import choice
-from errors import PornHubRequestError
+from .errors import PornHubRequestError
 
 
 class Shuana:

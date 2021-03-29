@@ -1,2 +1,4 @@
 dist/*
+build/*
+shuana.egg-info/*
 __pycache__/*

@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='shuana',
-    version='1.0.1',
+    version='1.0.2',
     lisence='MIT',
     description='shuana is horny',
     long_description=open("README.md", "r").read(),
